@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="project.css">
+</head>
+<body>
+    <div class="header">
+
+        <div class="img">
+            <img src="images/logo.avif" alt="Logo">
+        </div>
+
+        <div class="header_menu">
+        <div id="stocks">
+            <ul >
+                <li><button id="dash_board">Dashboard</button></li>
+                <li><button id="emp_det" > Employee</button></li>
+                <li><button id="stocks_det"> Stocks</button></li>
+                <li><button id = "sales_det" >Sales</button></li>
+                <li><button id="log_in"> Login</button></li>
+                <li> <button id = "search_icon">Search</button></li>
+               
+            </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <div id ="search_bar"> 
+        <input type = "text" id = "search_words" placeholder = "search">
+        <ul id = "search_output">search</ul>
+    </div>
+
+    <!---------------------------------- Dashboard Details  ------------------------------------------------------>
+
+<div id="dash_details"> 
+    <h1 id="head_1">Welcome To Storage </h1>
+
+    <div id="user_details">
+        <!-- <h4 id="icon"></h4> -->
+    <div id = "hide_login">
+
+    <input type="text" id="user_name" placeholder="Enter User Name">
+    <input type="text" id="user_password" placeholder = "Enter password"> 
+    
+   
+
+    </div>
+
+
+   
+    <div id = "hide_signup">
+    <input type = "text" id = "signup_name" placeholder = "Enter New User Name">
+    <input type = "text" id = "signup_password" placeholder = "Enter New Password">
+     <button id = "sign_up">Sign up</button>
+      <button id = "logout">logout</button>
+      <button id="login_btn">login</button>
+     
+    </div>
+    </div>
+
+    <div id="login_list">
+        <ul id="user_login"></ul>
+    </div>
+   
+</div>
+
+<div id="stocks_form"> 
+<input type="text" id="name" placeholder="Enter Stock Name">
+<input type="number" id="quantity" placeholder="Enter Quantity">
+<input type="number" id="price" placeholder="Enter Price">
+<button id="stocksbtn">Save</button>
+     
+</div>
+   <div id="stocks_list">
+        <h3> List</h3>
+            <ul id="list"></ul>
+                <p>Total Quantity: <span id="totalQty">0</span></p>
+                <p>Total Price: <span id="totalPrice">0</span></p>
+    </div>
+
+<!-- Employee form -->
+<div id="employee_form">
+    <input type="text" id="emp_name" placeholder="Enter Employee Name">
+    <input type="number" id="emp_salary" placeholder="Enter Employee Salary">
+    <input type="text" id="emp_dept" placeholder="Enter Employee Department">
+    <input type = "number" id = "emp_bouns" placeholder = "Enter Bonus Percentage">
+   <button id="employeebtn">Save</button>
+</div>
+
+<div id="employee_list" >
+   
+    </h3>
+   
+    <ul id="emplist"></ul>
+
+</div>
+
+
+
+<div id="sales_details"> 
+    <input type="text" id="sales" placeholder="Enter Sold Items">
+    <input type="number" id="discount" placeholder="Enter discount %">
+    <input type="number" id="price_no" placeholder="Enter the price">
+    <input type="text" id="customer_name" placeholder="Enter the customer name">
+  <p>
+    Discount Price : <span id="discount_on">0</span>
+</p>
+    
+    
+
+    <button id="sales_save_btn"> Save</button>
+</div> 
+
+<div id = "sales_list">
+    
+    <ul id="sales_detil"></ul>
+    
+    <!-- <input type="text" id="number">  -->
+   
+</div>
+ 
+</body>
+ <script src="project.js"></script>
+</html>
