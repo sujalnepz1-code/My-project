@@ -1,0 +1,274 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(images/storage.png);
+}
+.header{
+    background-color:rgb(207, 173, 173);
+    height: 90px;
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+    animation : header 5s infinite alternate;
+    
+}
+
+@keyframes header {
+    0%{
+         background-color:rgb(207, 173, 173);
+    }
+    25% {
+          background-color:rgb(144, 228, 241);
+    }
+
+    50%{
+        background-color:rgb(215, 177, 83);
+    }
+
+     75%{
+        background-color:rgb(89, 120, 162);
+    }
+
+     100%{
+        background-color:rgb(231, 65, 204);
+    }
+}
+
+
+.img img{
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+    border-radius: 50px;
+}
+
+
+
+
+
+.header_menu button{
+    color: rgb(3, 4, 4);
+    align-items: center;
+    margin: 10px;
+    font-size: 24px;
+    border-radius: 10px;
+    
+}
+
+.header_menu button:hover{
+    background-color: rgb(13, 231, 231);
+    cursor: pointer;
+    animation : my;
+    animation-duration: 5s;
+    
+}
+
+@keyframes my {
+    from{
+        background-color :blue;
+    }
+    to{
+         background-color : rgb(232, 127, 127);
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    display : inline;
+    padding: 40px;
+    
+}
+
+button {
+    padding: 8px 12px;
+    cursor: pointer;
+    margin-left: 60%;
+}
+
+/* Employee Form */
+#stocks_form {
+    display: none;
+    margin: 20px;
+}
+
+#stocks_form input {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left:60%;
+    padding: 15px;
+     width: 16%;
+     font-size: 18px;
+     font-style: times new roman;
+      border-radius : 30px;
+    
+     
+}
+
+#stocks_list p{
+    background-color: black;
+    color:white ;
+    font-size: 18px;
+    height: 40px;
+    width: 20%;
+    border-radius: 10px;
+    border: olivedrab 5px solid;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    margin-left: 60%;
+}
+
+ #list {
+  color: black;
+    border-radius: 20px;
+    background-color: rgb(243, 243, 240);
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    width : 30%;
+    
+}
+
+#stocks_list h3{
+    margin-left: 60%;
+}
+
+#employee_list h3{
+    margin-left:60 ;
+  
+}
+
+
+
+#employee_form {
+    display: none;
+    margin: 20px;
+}
+
+#employee_form input {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left:60%;
+    padding: 15px;
+    width: 16%;
+    font-size: 18px;
+    font-style: times new roman;
+     border-radius : 30px;
+}
+
+#employee_list {
+    margin: 20px;
+}
+
+ #emplist {
+  color: black;
+    border-radius: 20px;
+    background-color: rgb(222, 222, 172);
+    display: flex;
+    flex-direction: column;
+    font-size: 24px;
+    width: 30%;
+    
+}
+
+/* For Dashboard details */
+
+ #head_1{
+    color: red;
+    text-align: center;
+
+}
+
+#sales_details input {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left:60%;
+    padding: 15px;
+     width: 16%;
+     font-size: 18px;
+     font-style: times new roman;
+     border-radius : 30px;
+}
+
+
+#search_bar{
+    width: 300px;
+    margin: 20px auto;
+    position: relative;
+}
+
+#search_words{
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #333;
+    border-radius: 8px;
+    outline: none;
+    font-size: 16px;
+    box-sizing: border-box;
+}
+
+#search_words:focus{
+    border-color: #007bff;
+}
+
+#search_output{
+    list-style: none;
+    padding: 0;
+    margin-top: 5px;
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.1);
+}
+
+#search_output li{
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#search_output li:hover{
+    background-color: #f1f1f1;
+
+}
+
+
+#signup_name,
+#signup_password  {
+    display: block;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left:60%;
+    padding: 15px;
+     width: 16%;
+     font-size: 18px;
+     font-style: times new roman;
+     border-radius : 30px;
+}
+
+
+
+#employeebtn,
+#stocksbtn,
+#sales_save_btn,
+#sign_up,
+#logout,
+#login_btn {
+    border-radius: 30px;
+    border: 1px solid black;
+    background-color: lightblue;
+}
+
+
+#sales_detil {
+    background-color : rgb(243, 239, 239);
+    width : 40%;
+}
